@@ -1,0 +1,20 @@
+"use client";
+
+import { cn } from "@/lib/utils";
+
+export function Card({ className, children }: { className?: string; children: React.ReactNode }) {
+  return <div className={cn("rounded-xl border border-zinc-200 bg-white", className)}>{children}</div>;
+}
+
+export function CardHeader({ className, children }: { className?: string; children: React.ReactNode }) {
+  return <div className={cn("border-b border-zinc-200 px-4 py-3", className)}>{children}</div>;
+}
+
+export function CardTitle({ className, children }: { className?: string; children: React.ReactNode }) {
+  return <div className={cn("text-sm font-semibold text-zinc-900", className)}>{children}</div>;
+}
+
+export function CardBody({ className, children }: { className?: string; children: React.ReactNode }) {
+  return <div className={cn("px-4 py-3", className)}>{children}</div>;
+}
+
